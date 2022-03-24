@@ -1,0 +1,40 @@
+/*---------------------
+    media query
+  --------------------*/
+  @mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content
+    }
+}
+
+
+@mixin mobile {
+    @media screen and (max-width: 280px) {
+        @content
+    }
+}
+
+
+
+/*---------------------
+ media query for hero
+  --------------------*/
+  @media (max-width: 992px) {
+    .hero .row{
+        .col-6 p{
+            margin: .5rem 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .row{
+        flex-direction: column;
+        text-align: center;
+        .col-6 p{
+            margin-right: 0rem;
+        }
+    }
+}
+
+
