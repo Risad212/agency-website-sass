@@ -1,12 +1,13 @@
+/*[===============
+  base style 
+  ===============]*/
 @import '../base/color';
 @import '../base/common';
 @import '../base/typographi';
 @import '../base/responsive';
 
 
-/*[===============
-  base style 
-  ===============]*/
+// [==========================]
 
 
 /*--- navbar import --- */
@@ -15,3 +16,7 @@
 
 //---- hero import  ------ 
 @import '../layout/hero';
+
+
+//---- features import  ------ 
+@import '../layout/features'

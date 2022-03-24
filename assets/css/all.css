@@ -1,3 +1,6 @@
+/*[===============
+  base style 
+  ===============]*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
@@ -49,15 +52,23 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding-top: 0rem;
+    padding-left: 0rem;
   }
   .hero .row .col-6 p {
     margin-right: 0rem;
   }
 }
 
-/*[===============
-  base style 
-  ===============]*/
+/*---------------------
+ media query for features
+  --------------------*/
+@media (max-width: 992px) {
+  .features .features-title p {
+    margin: .8rem 5rem;
+  }
+}
+
 /*--- navbar import --- */
 .navbar {
   background: "#ddd";
@@ -114,11 +125,6 @@ ul {
   display: flex;
 }
 
-.hero .col-6 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
 .hero .col-6 span {
   font-size: .6rem;
   color: #FBB244;
@@ -168,5 +174,75 @@ ul {
 
 .hero .col-6 img {
   max-width: 100%;
+}
+
+.features {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.features .features-title span {
+  font-size: .6rem;
+  color: #FBB244;
+  background-color: rgba(251, 178, 68, 0.2);
+  padding: .5rem 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 33px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.features .features-title h3 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #081158;
+  font-weight: 900;
+}
+
+.features .features-title p {
+  font-size: .8rem;
+  color: #777;
+  margin: .8rem 21rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.features .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2.5rem;
+}
+
+.features .row .col-4 {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  margin: 0 10px;
+  padding: 2rem;
+}
+
+.features .row .col-4 i {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.features .row .col-4 i::before {
+  background-color: rgba(251, 178, 68, 0.5);
+  padding: 1.2rem;
+  border-radius: 50%;
+}
+
+.features .row .col-4 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #081158;
+  margin: .8rem 0;
+}
+
+.features .row .col-4 p {
+  color: #777;
+  font-family: "Poppins", sans-serif;
+  font-size: .9rem;
 }
 /*# sourceMappingURL=all.css.map */

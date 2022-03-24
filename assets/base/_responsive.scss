@@ -31,6 +31,8 @@
     .hero .row{
         flex-direction: column;
         text-align: center;
+        padding-top: 0rem;
+        padding-left: 0rem;
         .col-6 p{
             margin-right: 0rem;
         }
@@ -38,3 +40,15 @@
 }
 
 
+/*---------------------
+ media query for features
+  --------------------*/
+  @media (max-width: 992px) {
+    .features{
+        .features-title{
+            p {
+              margin: .8rem 5rem;
+            }
+        }
+    }
+}
