@@ -1,5 +1,5 @@
 /*[===============
-  base style 
+      base style 
   ===============]*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
@@ -31,6 +31,17 @@ ul {
   font-size: .9rem;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+.title {
+  font-size: .6rem;
+  color: #FBB244;
+  background-color: rgba(251, 178, 68, 0.2);
+  padding: .5rem 1.2rem;
+  border-radius: 33px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 /*---------------------
@@ -345,10 +356,6 @@ ul {
 
 .about .row .col-6 button {
   margin-top: 1.5rem;
-  background: #081158;
-  color: #fff;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
 }
 
 .about .row .col-6 button:hover {
@@ -389,5 +396,74 @@ ul {
   .about .row .about-content {
     padding-top: 1rem;
   }
+}
+
+.service {
+  margin: 5rem 0;
+}
+
+.service .service-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.service .service-title span {
+  font-size: .6rem;
+  color: #FBB244;
+  background-color: rgba(251, 178, 68, 0.2);
+  padding: .5rem 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 33px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.service .service-title h2 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #081158;
+  font-weight: 700;
+}
+
+.service .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service .row .col-6 {
+  padding: 30px;
+  border: 1px solid #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 21rem;
+}
+
+.service .row .col-6 i {
+  font-size: 2.5rem;
+}
+
+.service .row .col-6 .service-content {
+  margin-left: 1.5rem;
+}
+
+.service .row .col-6 .service-content h4 {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.service .row .col-6 .service-content p {
+  font-size: .8rem;
+  color: #777;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */

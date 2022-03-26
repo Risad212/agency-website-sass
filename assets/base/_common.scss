@@ -26,3 +26,14 @@ ul{
     transition: all .3s;
 }
 
+.title{
+    font-size: .6rem;
+    color: $secondary-color;
+    background-color: rgba(251, 178, 68, 0.2);
+    padding: .5rem 1.2rem;
+    // font-family: $primary-font;
+    border-radius: 33px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
