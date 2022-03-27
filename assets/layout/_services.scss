@@ -33,6 +33,7 @@
             width: 21rem;
             i{
                 font-size: 2.5rem;
+                color: $primary-color;
             }
             .service-content{
                 margin-left: 1.5rem;
@@ -47,6 +48,23 @@
                     font-family: $secondary-font;
                     line-height: 1.5;
                 }
+            }
+        }
+    }
+}
+
+
+/*---------------------
+ media query for service
+  --------------------*/
+
+@media screen and (max-width: 768px) {
+    .service{
+        .row{
+            grid-template-columns: auto;
+            .col-6{
+                width: 100%;
+                margin: 0 1rem;
             }
         }
     }

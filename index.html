@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SASS Project</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -158,5 +161,103 @@
  <!-- service section start -->
 
 
+ <!-- testimonial section start -->
+ <section class="testimonial">
+    <div class="container testimonialMain">
+       <div class="testimonial-title">
+          <span>TESTIMONIALS</span>
+          <h2>Testimonials</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+       </div>
+     <div class="row">
+        <div class="col-4">
+           <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p>
+            <div class="client-info-wrapper">
+               <img src="assets/media/client.webp" alt="">
+                <div class="client-info">
+                   <h5>Carl Anderson</h5>
+                   <span>Director at Google</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+         <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p>
+          <div class="client-info-wrapper">
+             <img src="assets/media/client.webp" alt="">
+              <div class="client-info">
+                 <h5>Carl Anderson</h5>
+                 <span>Director at Google</span>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+         <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p>
+          <div class="client-info-wrapper">
+             <img src="assets/media/client.webp" alt="">
+              <div class="client-info">
+                 <h5>Carl Anderson</h5>
+                 <span>Director at Google</span>
+              </div>
+          </div>
+      </div>
+     </div>
+   </div>
+ </section>
+ <!-- testimonial section End -->
+
+
+ <!-- footer start -->
+ <footer>
+    <div class="container">
+       <div class="row">
+          <div class="col-3 footer-about">
+             <h3>About Cololib</h3>
+             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul>
+                 <li><i class="fa-brands fa-twitter"></i></li>
+                 <li><i class="fa-brands fa-instagram"></i></li>
+                 <li><i class="fa-brands fa-facebook-f"></i></li>
+              </ul>
+          </div>
+          <div class="col-3 footer-list">
+            <h3>Pages</h3>
+             <ul>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+             </ul>
+          </div>
+          <div class="col-3 footer-list">
+            <h3>Resources</h3>
+             <ul>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+             </ul>
+          </div>
+          <div class="col-3 footer-list">
+             <h3>Contact</h3>
+             <ul>
+                <li><i class="fa-solid fa-envelope"></i>info@Cololib</li>
+                <li><i class="fa-solid fa-phone"></i>+1 222 212 3819</li>
+                <li><i class="fa-solid fa-location-dot"></i>43 Raymouth Rd. Baltemoer, London 3910</li>
+             </ul>
+          </div>
+       </div>
+       <p class="copy-right">Copyright ©2022 All rights reserved | This template is made with<i class="fa-solid fa-heart"></i>by Colorlib</p>
+    </div>
+ </footer>
+ <!-- footer End -->
+
+ <!-- plugins -->
+ <script src="assets/plugin/jquery-3.6.0.min.js"></script>
+ <script src="assets/plugin/slick.min.js"></script>
+
+ <!-- initialige plugin -->
+ <script>
+    $(document).ready(function(){
+      $('.testimonialMain').slick();
+    })
+ </script>
 </body>
 </html>
