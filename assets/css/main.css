@@ -1,7 +1,8 @@
 /*[===============
       base style 
   ===============]*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
@@ -521,15 +522,15 @@ ul {
 .testimonial .row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   padding-top: 2.5rem;
-  grid-gap: 1em;
 }
 
 .testimonial .row .col-4 {
   padding: 2rem;
   border: 1px solid #ddd;
+  margin-right: 1rem;
 }
 
 .testimonial .row .col-4 p {

@@ -30,12 +30,12 @@
     }
     .row{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         padding-top: 2.5rem;
-        grid-gap: 1em;
         .col-4{
             padding: 2rem;
             border: 1px solid #ddd;
+            margin-right: 1rem;
             p{
                 font-size: 1rem;
                 color: #777;
