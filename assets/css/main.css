@@ -131,6 +131,43 @@ ul {
   }
 }
 
+/*--- Mobile navbar import --- */
+.Mobile-nav {
+  background: #fff;
+  height: 100vh;
+  position: fixed;
+  width: 15%;
+  z-index: 99;
+  right: 0;
+  padding-top: 2rem;
+}
+
+.Mobile-nav i {
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+.Mobile-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.Mobile-nav ul a {
+  color: #081158;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
 .hero .row {
   padding-top: 5rem;
   padding-left: 1rem;
@@ -161,7 +198,7 @@ ul {
 .hero .col-6 p {
   font-size: .8rem;
   color: #777;
-  margin: .8rem 0;
+  margin: 1.2rem 0;
   margin-right: 14.5rem;
   font-family: "Poppins", sans-serif;
 }
@@ -225,7 +262,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2.5rem;
+  padding-top: 5rem;
 }
 
 .features .row .col-4 {
@@ -567,6 +604,38 @@ ul {
   font-weight: 400;
 }
 
+/*--------------
+  media query
+  -------------- */
+@media screen and (max-width: 992px) {
+  .testimonial .row {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial .row .col-4 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial .testimonial-title p {
+    padding: 0 8rem;
+  }
+  .testimonial .row {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .testimonial .row .col-4 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial .testimonial-title p {
+    padding: 0 1rem;
+  }
+}
+
 footer {
   padding: 5rem 0;
 }
@@ -635,11 +704,12 @@ footer .row .footer-list li i {
 }
 
 footer .copy-right {
-  padding-top: 5rem;
+  padding-top: 8rem;
   text-align: center;
   font-size: .8rem;
   font-family: "Poppins", sans-serif;
   color: #777;
+  padding-bottom: 1rem;
 }
 
 footer .copy-right i {

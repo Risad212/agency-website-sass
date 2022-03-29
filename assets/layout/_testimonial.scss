@@ -65,3 +65,46 @@
         }
     }
 }
+
+
+
+/*--------------
+  media query
+  -------------- */
+  @media screen and (max-width: 992px) {
+      .testimonial{
+          .row{
+              grid-template-columns: repeat(2, 1fr);
+              .col-4{
+                  margin-bottom: 1rem;
+              }
+          }
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+    .testimonial{
+        .testimonial-title{
+            p{
+                padding: 0 8rem;  
+            }
+        }
+        .row{
+            grid-template-columns: repeat(1, 1fr);
+            .col-4{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .testimonial{
+        .testimonial-title{
+            p{
+                padding: 0 1rem;  
+            }
+        }
+    }
+}

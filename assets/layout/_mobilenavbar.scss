@@ -1,0 +1,28 @@
+.Mobile-nav{
+    background: #fff;
+    height: 100vh;
+    position: fixed;
+    width: 15%;
+    z-index: 99;
+    right: 0;
+    padding-top: 2rem;
+    i{
+        font-size: 2.5rem;
+        margin-left: 1.5rem;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        a{
+            color: $primary-color;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+
+   
