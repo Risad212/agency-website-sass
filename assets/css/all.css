@@ -131,15 +131,22 @@ ul {
   }
 }
 
+/*---------------------
+    media query navbar
+  --------------------*/
 /*--- Mobile navbar import --- */
 .Mobile-nav {
   background: #fff;
   height: 100vh;
   position: fixed;
-  width: 15%;
+  min-width: 25%;
   z-index: 99;
-  right: 0;
+  right: -30rem;
   padding-top: 2rem;
+  -webkit-box-shadow: 5px 5px 5px 5px #a8a1a1;
+          box-shadow: 5px 5px 5px 5px #a8a1a1;
+  -webkit-transition: right .5s ease-in;
+  transition: right .5s ease-in;
 }
 
 .Mobile-nav i {
@@ -225,6 +232,41 @@ ul {
 
 .hero .col-6 img {
   max-width: 100%;
+}
+
+/*---------------------
+ media query for hero
+  --------------------*/
+@media (max-width: 992px) {
+  .hero .row .col-6 p {
+    margin: .5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-top: 0rem;
+    padding-left: 0rem;
+  }
+  .hero .row .col-6 p {
+    margin-right: 0rem;
+    font-size: .6rem;
+  }
+  .hero .row .col-6 h2 {
+    font-size: 1.5rem;
+  }
+  .hero .row .col-6 img {
+    max-width: 70%;
+    padding-top: 2rem;
+  }
+  .hero .row .col-6 button {
+    padding: 0.6rem 1.5rem;
+  }
 }
 
 .features {
