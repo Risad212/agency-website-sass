@@ -45,9 +45,6 @@ ul {
   display: inline-block;
 }
 
-/*---------------------
-    media query
-  --------------------*/
 /*--- navbar import --- */
 .navbar {
   background: "#ddd";
@@ -69,20 +66,6 @@ ul {
   margin-left: 1.8rem;
 }
 
-.navbar__bars {
-  opacity: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar__bars {
-    opacity: 1;
-    position: absolute;
-    top: 22px;
-    right: 20px;
-    font-size: 2rem;
-  }
-}
-
 .navbar .navbar__menu a {
   color: #000;
   font-family: "Montserrat", sans-serif;
@@ -90,21 +73,12 @@ ul {
   margin-right: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar .navbar__menu a {
-    display: none;
-  }
-}
-
-/*---------------------
-    media query navbar
-  --------------------*/
 /*--- Mobile navbar import --- */
 .Mobile-nav {
   background: #fff;
   height: 100vh;
   position: fixed;
-  min-width: 25%;
+  width: 25%;
   z-index: 99;
   right: -30rem;
   padding-top: 2rem;
@@ -430,7 +404,7 @@ ul {
 .about .row .col-6 p {
   font-size: .8rem;
   color: #777;
-  margin-right: 5rem;
+  margin-right: 1rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -598,14 +572,6 @@ ul {
   font-family: "Poppins", sans-serif;
 }
 
-.testimonial .row {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  padding-top: 2.5rem;
-}
-
 .testimonial .row .col-4 {
   padding: 2rem;
   border: 1px solid #ddd;
@@ -644,38 +610,6 @@ ul {
   font-family: "Poppins", sans-serif;
   font-size: .8rem;
   font-weight: 400;
-}
-
-/*--------------
-  media query
-  -------------- */
-@media screen and (max-width: 992px) {
-  .testimonial .row {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .testimonial .row .col-4 {
-    margin-bottom: 1rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .testimonial .testimonial-title p {
-    padding: 0 8rem;
-  }
-  .testimonial .row {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .testimonial .row .col-4 {
-    margin-bottom: 1rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .testimonial .testimonial-title p {
-    padding: 0 1rem;
-  }
 }
 
 footer {

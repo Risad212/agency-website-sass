@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- owl carousel -->
     <link rel="stylesheet" href="assets/plugins/owl plugin/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/plugins/owl plugin/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owl plugin/owl.theme.default.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- animated css-->
@@ -36,9 +36,6 @@
       <a href="#" class="navbar__logo">
           <img src="./assets/media/logo.jpg" alt="">
      </a>
-      <div class="navbar__bars MobileBar">
-        <i class="fa-solid fa-bars"></i>
-      </div>
        <div class="navbar__menu">
           <a href="/" class="navbar__menu--links">Home</a>
           <a href="/" class="navbar__menu--links">About Us</a>
@@ -199,7 +196,7 @@
         <div class="col-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true">
          <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p>
           <div class="client-info-wrapper">
-             <img src="assets/media/client.webp" alt="">
+             <img src="assets/media/client2.png" alt="">
               <div class="client-info">
                  <h5>Carl Anderson</h5>
                  <span>Director at Google</span>
@@ -209,7 +206,7 @@
       <div class="col-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true">
          <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p>
           <div class="client-info-wrapper">
-             <img src="assets/media/client.webp" alt="">
+             <img src="assets/media/client3.png" alt="">
               <div class="client-info">
                  <h5>Carl Anderson</h5>
                  <span>Director at Google</span>
@@ -265,12 +262,11 @@
  </footer>
  <!-- footer End -->
 
- <!-- plugins -->
- <script src="assets/plugin/main.js"></script>
- <script src="assets/plugins/jquery/jquery-3.6.0.min.js"></script>
- <script src="assets/plugin/wow.min.js"></script>
+ <!-- Js plugins -->
+ <script src="assets/plugins/jquery-3.6.0.min.js"></script>
+ <script src="assets/plugins/owl.carousel.min.js"></script>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- <script src="assets/plugins/owl plugin/owl.carousel.min.js"></script>
+ <script src="assets/plugin/main.js"></script>
  <script>
    AOS.init();
  </script>
@@ -287,28 +283,25 @@
     })
  </script>
  <!-- owl calrousel init-->
- <script>
 <script>
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    autoplay: true,
-    dots:true,
-    autoplayTimeout: 1000,
-    nav: true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:2
-        }
-    }
+   $('.owl-carousel').owlCarousel({
+   loop:true,
+   margin:10,
+   autoplay: true,
+   autoplayTimeout: 2000,
+   nav: true,
+   responsive:{
+       0:{
+           items:1
+       },
+       600:{
+           items:2
+       },
+       1000:{
+           items:3
+       }
+   }
 })
 </script>
- </script>
 </body>
 </html>
