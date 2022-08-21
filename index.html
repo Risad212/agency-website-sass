@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>SASS Project</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SASS Project</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/plugins/owl plugin/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owl plugin/owl.carousel.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- animated css-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     
@@ -181,7 +185,7 @@
           <h2>Testimonials</h2>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
        </div>
-     <div class="row slickContainer">
+     <div class="row owl-carousel owl-theme">
         <div class="col-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true">
            <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p>
             <div class="client-info-wrapper">
@@ -263,9 +267,10 @@
 
  <!-- plugins -->
  <script src="assets/plugin/main.js"></script>
- <script src="assets/plugin/jquery-3.6.0.min.js"></script>
+ <script src="assets/plugins/jquery/jquery-3.6.0.min.js"></script>
  <script src="assets/plugin/wow.min.js"></script>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script src="assets/plugins/owl plugin/owl.carousel.min.js"></script>
  <script>
    AOS.init();
  </script>
@@ -280,6 +285,30 @@
     closNav.addEventListener('click', function(){
       document.getElementById('showMobileNav').style.right = '-286px'    
     })
+ </script>
+ <!-- owl calrousel init-->
+ <script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay: true,
+    dots:true,
+    autoplayTimeout: 1000,
+    nav: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+</script>
  </script>
 </body>
 </html>
